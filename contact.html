@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Portfolio.css" text="html/css">
+        <title>Contact Me</title>
+    </head>
+
+    <body>
+        <!----------------------Home Page Start---------------------->
+  
+        <div class="main">
+            <div class="navbar">
+                <a href="home.html" target="_blank">Home</a>
+                <a href="about.html" target="_blank">About</a>
+                <a href="gallery.html" target="_blank">Gallery</a>
+                <a href="project.html" target="_blank">Projects</a>
+                <a href="contact.html" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <!----------------------Home Page End---------------------->
+
+         <!----------------------Contact Section Start-------------------->
+
+         <div class="contact-section">
+            <div class="contact-top-area">
+                <h1>Contact Me</h1>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <form onsubmit="sendEmail(), reset(); return false;">
+                <h1>Get in Touch</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!----------------------Contact Section End------------------->
+
+        <!----------------------Footer Section Start---------------------->
+
+        <div class="footer-section">
+            <div class="footer">
+                <h1>SOCIAL</h1>
+                <br>
+                <a href="https://www.facebook.com" target="_blank"><h2>Facebook</h2></a>
+                <a href="https://www.instagram.com" target="_blank"><h2>Instagram</h2></a>
+                <a href="https://www.linkedin.com" target="_blank"><h2>Linkedin</h2></a>
+            </div>
+            <div class="footer">
+                <h1>CONTACT ME</h1>
+                <br>
+                <img src="Gmail.jpg" alt="Gmail">
+                <a href="mailto:kumarshubham96341@gmail.com"><h2 class="gmail">kumarshubham96341@gmail.com</h2></a>
+                <img src="Phone.jpg" alt="phone">
+                <a href="tel:+919835500261"><h2 class="phone">9835500261</h2></a>
+            </div>
+            <div class="footer">
+                <h1>FOLLOW US</h1>
+                <br>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/shubudeveloper/shubucodingroom" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="develop">
+            <h2><marquee>Developed by Shubham Kumar @ B.P. Mandal College of Engineering, Madhepura</marquee></h2>
+        </div>
+
+     <!----------------------Footer Section End---------------------->
+ 
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="portfolio.js"></script>
+   </body>
+</html>
