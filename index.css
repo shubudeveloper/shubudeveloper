@@ -177,6 +177,7 @@ ul li a{
 @media(max-width:494px){
     .main-header>p{
         font-size:15px;
+        float:left;
     }
 
     .main{
