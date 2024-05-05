@@ -1,86 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css" text="html/css">
+        <link rel="stylesheet" href="common.css" text="html/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="portfolio.css" text="html/css">
         <title>Contact Me</title>
     </head>
-
-    <body>
-        <!----------------------Home Page Start---------------------->
-  
-        <div class="main">
+    <body class="sticky">
+        <div class="header-section">
             <div class="navbar">
-                <a href="index.html" target="_blank">Home</a>
-                <a href="about.html" target="_blank">About</a>
-                <a href="gallery.html" target="_blank">Gallery</a>
-                <a href="project.html" target="_blank">Projects</a>
-                <a href="contact.html" target="_blank">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="project.html">Project</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
 
-        <!----------------------Home Page End---------------------->
-
-         <!----------------------Contact Section Start-------------------->
-
-         <div class="contact-section">
-            <div class="contact-top-area">
-                <h1>Contact Me</h1>
-            </div>
+        <div class="contact-header">
+            <h1>Contact Me</h1>
         </div>
 
-        <div class="contact-container">
-            <form onsubmit="sendEmail(), reset(); return false;">
-                <h1>Get in Touch</h3>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <input type="text" id="phone" placeholder="Phone Number" required>
-                <textarea id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!----------------------Contact Section End------------------->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h2>LINKS<div class="underline"><span></span></div></h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                        
+                <div class="col">
+                    <h2>SOCIAL<div class="underline"><span></span></div></h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/share/4kfyidBwpUEtCeb6/?mibextid=qi2Omg">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/shubhamofficial2364?igsh=dWx2eTNmY3Y0NzNu">Instagram</a></li>
+                        <li><a href="https://www.youtube.com">Youtube</a></li>
+                        <li><a href="https://www.linkedin.com/in/shubham-kumar-39650b270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></li>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                    </ul>
+                </div>
 
-        <!----------------------Footer Section Start---------------------->
+                <div class="col">
+                    <h2>LEARNING PLATFORMS<div class="underline"><span></span></div></h2>
+                    <ul>
+                        <li><a href="https://www.udemy.com">Udemy</a></li>
+                        <li><a href="https://www.coursera.com">Coursera</a></li>
+                        <li><a href="https://www.khamacademy.com">Khan Academy</a></li>
+                        <li><a href="https://www.edX.com">edX</a></li>
+                        <li><a href="https://www.codeacademy.com">Code Academy</a></li>
+                    </ul>
+                </div>
 
-        <div class="footer-section">
-            <div class="footer">
-                <h1>SOCIAL</h1>
-                <br>
-                <a href="https://www.facebook.com" target="_blank"><h2>Facebook</h2></a>
-                <a href="https://www.instagram.com" target="_blank"><h2>Instagram</h2></a>
-                <a href="https://www.linkedin.com" target="_blank"><h2>Linkedin</h2></a>
+                <div class="col">
+                    <h2>FOLLOW ME<div class="underline"><span></span></div></h2>
+                    <div class="socialicon">
+                        <a href="https://www.facebook.com/share/4kfyidBwpUEtCeb6/?mibextid=qi2Omg" target="_blank"><i class="fa fa-facebook"></i></a>   
+                        <a href="https://www.instagram.com/shubhamofficial2364?igsh=dWx2eTNmY3Y0NzNu" target="_blank"><i class="fa fa-instagram"></i></a>   
+                        <a href="https://www.linkedin.com/in/shubham-kumar-39650b270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin"></i></a>    
+                        <a href="https://www.youtube.com/@NebulaCoders2024" target="_blank"> <i class="fa fa-youtube-play"></i></a>                          
+                    </div>
+                </div>
             </div>
-            <div class="footer">
-                <h1>CONTACT ME</h1>
-                <br>
-                <img src="Gmail.jpg" alt="Gmail">
-                <a href="mailto:kumarshubham96341@gmail.com"><h2 class="gmail">kumarshubham96341@gmail.com</h2></a>
-                <img src="Phone.jpg" alt="phone">
-                <a href="tel:+919835500261"><h2 class="phone">9835500261</h2></a>
-            </div>
-            <div class="footer">
-                <h1>FOLLOW US</h1>
-                <br>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="https://github.com/shubudeveloper/shubucodingroom" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="develop">
-            <h2><marquee>Developed by Shubham Kumar @ B.P. Mandal College of Engineering, Madhepura</marquee></h2>
-        </div>
-
-     <!----------------------Footer Section End---------------------->
- 
-
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="portfolio.js"></script>
-   </body>
+        </footer>
+    </body>
 </html>
