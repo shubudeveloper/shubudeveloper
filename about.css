@@ -330,7 +330,7 @@ ul li a{
     }
 
     .main,.about-header,.skill-section{
-        width:142%;
+        width:100%;
     }
 
     .my-skills>div{
@@ -380,7 +380,6 @@ ul li a{
 
     .introduction>.para-1{
         animation:none;
-        width:120%;
     }
 
     .introduction .para-2{
