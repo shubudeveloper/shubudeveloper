@@ -380,6 +380,7 @@ ul li a{
 
     .introduction>.para-1{
         animation:none;
+        width:120%;
     }
 
     .introduction .para-2{
