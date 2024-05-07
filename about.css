@@ -378,7 +378,7 @@ ul li a{
         margin-left:-70%;
     }
 
-    .introduction .para-1{
+    .introduction>.para-1{
         animation:none;
     }
 
