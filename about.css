@@ -4,7 +4,6 @@
     align-items:center;
     justify-content:center;
     padding:5%;
-    margin-top:4.8%;
     border-bottom-left-radius:50px;
     border-bottom-right-radius:50px;
     background:#ffff00;
@@ -323,7 +322,6 @@ ul li a{
 @media(min-width:412px) and (max-width:494px){
     .about-header{
         padding:5%;
-        margin-top:12%;
     }
 
     .main,.skill-section{
@@ -333,6 +331,10 @@ ul li a{
 
     .main,.about-header,.skill-section{
         width:142%;
+    }
+
+    .my-skills>div{
+        margin-left:-70%;
     }
 
     footer{
@@ -357,7 +359,6 @@ ul li a{
 
     .about-header{
         padding:8%;
-        margin-top:25%;
     }
 
     .main,.skill-section{
@@ -367,6 +368,10 @@ ul li a{
 
     .main,.about-header,.skill-section{
         width:196%;
+    }
+
+    .my-skills>div{
+        margin-left:-70%;
     }
 
     .introduction .para-2{
@@ -427,7 +432,6 @@ ul li a{
     }
     .about-header{
         padding:8%;
-        margin-top:10%;
     }
 
     .main,.skill-section{
@@ -439,17 +443,29 @@ ul li a{
         width:195%;
     }
 
+    .my-skills>div{
+        margin-left:-70%;
+    }
+
     .introduction .para-2{
         font-size:35px;
     }
 
     .btn button{
-        padding:2%;
+        padding:3%;
         margin-top:10%;
     }
 
     .btn a{
-        font-size:22px;
+        font-size:30px;
+    }
+
+    .about-col p{
+        font-size:35px;
+    }
+
+    .tab-contents li{
+        font-size:30px;
     }
 
     footer{
