@@ -337,6 +337,10 @@ ul li a{
         margin-left:-70%;
     }
 
+    .introduction .para-1{
+        animation:none;
+    }
+
     footer{
         padding:5%;
         left:0;
@@ -372,6 +376,10 @@ ul li a{
 
     .my-skills>div{
         margin-left:-70%;
+    }
+
+    .introduction .para-1{
+        animation:none;
     }
 
     .introduction .para-2{
