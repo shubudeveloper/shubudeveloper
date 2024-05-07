@@ -329,10 +329,6 @@ ul li a{
         flex-direction:column;
     }
 
-    .main,.about-header,.skill-section{
-        width:100%;
-    }
-
     .my-skills>div{
         margin-left:-70%;
     }
