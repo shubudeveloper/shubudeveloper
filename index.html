@@ -3,48 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css" text="html/css">
-        <link rel="stylesheet" href="common.css" text="html/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Home Page</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <title>Portfolio | Home Page</title>
     </head>
-    <body class="sticky">
-        <div class="header-section">
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="project.html">Project</a>
-                <a href="contact.html">Contact</a>
-            </div>
-              
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
-
+       
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="index.html">SHUBHAM KUMAR</a></div>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="Project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                        
+                    <a href="./documents/Resume.pdf" class="action_btn" download>Download Resume</a>
         
+                    <div class="toggle" id="toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
 
-        <div class="main-header">
-            <h1>Welcome</h1>
-            <p>
-                Discipline is the most important key of success.
-            </p>
-        </div>
+                <div class="dropdown_menu" id="dropdown_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="./documents/Resume.pdf" class="action_btn" download>Download Resume</a></li>
+                </div>
 
-        <div class="main">
-            <div  class="card">
-                <img src="Shubham.jpg" alt="Shubham" style="width:100%">
-                <h1>Shubham Kumar</h1>
-                <p class="title">Frontend Web Developer</p>
-                <p>BPMCE, Madhepura</p>
-                <a href="https://github.com/shubudeveloper" target="_blank"><i class="fa fa-github"></i></a>
-                <p><button><a href="contact.html">Contact</a></button></p>
+                <div class="text">
+                    <h1>Welcome</h1>
+                    <p>Discipline is the most important key of success.</p>
+                </div>
             </div>
-            <div class="home">
-                <p>Hello, my name is Shubham Kumar. I am an Engineering student and currently studying in 2<sup>nd</sup> year in B.tech (CSE). I am a <strong>Frontend Web Developer .</strong> I have done projects based on my skills. I am a member of <strong>Nebula Coders .</strong> Currently, I am learning about Arduino programming which is based on OOPS .</p>
-                <button ><a href="Resume.pdf" download>Resume</a></button>
+        </header>
+
+        <section class="main-header">
+            <div class="main">
+                <div  class="card">
+                    <img src="./images/Shubham.jpg" alt="Shubham" style="width:100%">
+                    <h1>Shubham Kumar</h1>
+                    <p class="title">Frontend Web Developer</p>
+                    <p>BPMCE, Madhepura</p>
+                    <a href="https://github.com/shubudeveloper" target="_blank"><i class="fa fa-github"></i></a>
+                    <p><button><a href="contact.html">Contact</a></button></p>
+                </div>
+                
+                <div class="home">
+                    <p>Hello, my name is Shubham Kumar. I am an Engineering student and currently studying in 2<sup>nd</sup> year in B.tech (CSE). I am a <strong>Frontend Web Developer .</strong> I have done projects based on my skills. I am a member of <strong>Nebula Coders and working with them.</strong> Currently, I am learning about Arduino programming which is based on OOPS .</p>
+                    <button ><a href="./documents/Resume.pdf" download>Resume</a></button>
+                </div>
             </div>
-        </div>
+        </section>
 
         <footer>
             <div class="row">
@@ -71,7 +86,7 @@
                 </div>
 
                 <div class="col">
-                    <h2>LEARNING PLATFORMS<div class="underline"><span></span></div></h2>
+                    <h2 style="white-space:nowrap;">LEARNING PLATFORMS<div class="underline"><span></span></div></h2>
                     <ul>
                         <li><a href="https://www.udemy.com">Udemy</a></li>
                         <li><a href="https://www.coursera.com">Coursera</a></li>
@@ -92,7 +107,20 @@
                 </div>
             </div>
         </footer> 
-        
-        <script src="common.js"></script>
+                
+        <script>
+
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            const togglebtn = document.querySelector('.toggle')
+            const togglebtnicon = document.querySelector('.toggle i')
+            const dropdownmenu = document.querySelector('.dropdown_menu')
+
+            togglebtn.onclick = function ()
+            {
+                dropdownmenu.classList.toggle('open')
+                const isOpen = dropdownmenu.classList.contains('open')
+            }
+
+        </script>
     </body>
 </html>
