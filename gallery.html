@@ -6,92 +6,104 @@
         <link rel="stylesheet" href="gallery.css" text="html/css">
         <link rel="stylesheet" href="common.css" text="html/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>My Gallery</title>
+        <title>Portfolio | My Gallery</title>
     </head>
-    <body class="sticky">
-        <div class="header-section">
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="project.html">Project</a>
-                <a href="contact.html">Contact</a>
+
+    <body>
+        <header class="header-section">
+            <div class="navbar">
+                <div class="logo"><a href="index.html">SHUBHAM KUMAR</a></div>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="Project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                        
+                    <a href="./documents/Resume.pdf" class="action_btn" download>Download Resume</a>
+        
+                    <div class="toggle" id="toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="dropdown_menu" id="dropdown_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="./documents/Resume.pdf" class="action_btn" download>Download Resume</a></li>
+                </div>
             </div>
-              
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </header>
 
-            <div class="logo">
-                <h1>Portfolio</h1>
+        <section>
+            <div class="gallery-header">
+                <h1>My Gallery</h1>
             </div>
 
-            <div class="resume">
-                <button ><a href="Resume.pdf" download> Download Resume</a></button>
+            <div class="heading">
+                <h1>My Certificates</h1>
             </div>
-        </div>
 
-        <div class="gallery-header">
-            <h1>My Gallery</h1>
-        </div>
+            <div class="gallery-section">
+                <div class="container">
+                    <img src="Salesforce_Certificate.jpg" alt="Certificate" class="image">
+                    <div class="overlay">
+                        <div class="text">Salesforce Certificate</Certificatebr></div>
+                    </div>
+                </div>
 
-        <div class="heading">
-            <h1>My Certificates</h1>
-        </div>
+                <div class="container">
+                    <img src="Completion_Certificate.jpg" alt="Certificate" class="image">
+                    <div class="overlay">
+                        <div class="text">Certificate of Completion</div>
+                    </div>
+                </div>
 
-        <div class="gallery-section">
-            <div class="container">
-                <img src="Salesforce_Certificate.jpg" alt="Certificate" class="image">
-                <div class="overlay">
-                  <div class="text">Salesforce Certificate</Certificatebr></div>
+                <div class="container">
+                    <img src="Participation_Certificate.jpg" alt="Certificate" class="image">
+                    <div class="overlay">
+                        <div class="text">Certificate of Participation</div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="Spoken_Tutorial.jpg" alt="Certificate" class="image">
+                    <div class="overlay">
+                    <div class="text">Spoken Tutorial Certificate</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="container">
-                <img src="Completion_Certificate.jpg" alt="Certificate" class="image">
-                <div class="overlay">
-                  <div class="text">Certificate of Completion</div>
+            <div class="heading-1">
+                <h1>Project Letter</h1>
+            </div>
+
+            <div class="letter">
+                <div class="letter-image">
+                    <marquee>Click on this image to view courses</marquee>
+                    <a href="https://www.engineercore.in" target="_blank"><img src="Project_Letter.jpg" alt="Shubham"></a>
                 </div>
-            </div>
 
-            <div class="container">
-                <img src="Participation_Certificate.jpg" alt="Certificate" class="image">
-                <div class="overlay">
-                  <div class="text">Certificate of Participation</div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="Spoken_Tutorial.jpg" alt="Certificate" class="image">
-                <div class="overlay">
-                  <div class="text">Spoken Tutorial Certificate</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="heading-1">
-            <h1>Project Letter</h1>
-        </div>
-
-        <div class="letter">
-            <div class="letter-image">
-               <marquee>Click on this image to view courses</marquee>
-               <a href="https://www.engineercore.in" target="_blank"><img src="Project_Letter.jpg" alt="Shubham"></a>
-            </div>
-
-            <div class="letter-text">
-               <h1>Shubham Kumar</h1>
-               <h2>B.Tech (CSE)</h2>
+                <div class="letter-text">
+                    <h1>Shubham Kumar</h1>
+                    <h2>B.Tech (CSE)</h2>
    
-               <br><br>
+                    <br><br>
    
-               <p><b>Project Name:</b> Calculator</p>
-               <br>
-               <p>This is my "Summer Internship Project Letter". In this project,I have implemented a calculator by using HTML, CSS and a little bit of JAVA SCRIPT performing an arithmetic operations addition, subtraction, multiplication and division.</p>
-               <img src="Shubham.jpg" alt="Shubham">
+                    <p class="para-1"><b>Project Name:</b> Calculator</p>
+                    
+                    <br>
+                    
+                    <p class="para-2">This is my "Summer Internship Project Letter". In this project,I have implemented a calculator by using HTML, CSS and a little bit of JAVA SCRIPT performing an arithmetic operations addition, subtraction, multiplication and division.</p>
+                    <img src="Shubham.jpg" alt="Shubham">
+                </div>
             </div>
-        </div>
+        </section>
          
-
         <footer>
             <div class="row">
                 <div class="col">
@@ -117,7 +129,7 @@
                 </div>
 
                 <div class="col">
-                    <h2>LEARNING PLATFORMS<div class="underline"><span></span></div></h2>
+                    <h2 style="white-space:nowrap;">LEARNING PLATFORMS<div class="underline"><span></span></div></h2>
                     <ul>
                         <li><a href="https://www.udemy.com">Udemy</a></li>
                         <li><a href="https://www.coursera.com">Coursera</a></li>
@@ -141,15 +153,20 @@
 
         <script>
 
-            /* Set the width of the sidebar to 250px (show it) */
-            function openNav() {
-            document.getElementById("mySidepanel").style.width = "250px";
+            
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            const togglebtn = document.querySelector('.toggle')
+            const togglebtnicon = document.querySelector('.toggle i')
+            const dropdownmenu = document.querySelector('.dropdown_menu')
+
+            togglebtn.onclick = function ()
+            {
+                dropdownmenu.classList.toggle('open')
+                const isOpen = dropdownmenu.classList.contains('open')
             }
-  
-            /* Set the width of the sidebar to 0 (hide it) */
-            function closeNav() {
-            document.getElementById("mySidepanel").style.width = "0";
-            }
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
         </script>
     </body>
