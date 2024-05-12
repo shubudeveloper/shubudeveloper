@@ -232,6 +232,8 @@ footer{
     color:#fff;
     padding:100px 0 30px;
     font-size:15px;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
 }
 
 .row{
@@ -368,7 +370,7 @@ ul li a{
         flex-direction:column;
     }
 
-    .main .card,.home,.home>button{
+    .main .card,.home,.home>button,footer{
         margin-top:10%;
     }
 
@@ -453,7 +455,7 @@ ul li a{
         flex-direction:column;
     }
 
-    .main .card,.home,.home>button{
+    .main .card,.home,.home>button,footer{
         margin-top:15%;
     }
 

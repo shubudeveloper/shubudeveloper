@@ -6,33 +6,43 @@
         <link rel="stylesheet" href="contact.css" text="html/css">
         <link rel="stylesheet" href="common.css" text="html/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Contact Me</title>
+        <title>Portfolio | Contact Page</title>
     </head>
-    <body class="sticky">
-        <div class="header-section">
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="project.html">Project</a>
-                <a href="contact.html">Contact</a>
-            </div>
-              
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="index.html">SHUBHAM KUMAR</a></div>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="Project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                    
+                    <a href="./documents/Resume.pdf" class="action_btn" download>Download Resume</a>
+    
+                    <div class="toggle" id="toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
 
-            <div class="logo">
-                <h1>Portfolio</h1>
+                <div class="dropdown_menu" id="dropdown_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="./documents/Resume.pdf" class="action_btn" download>Download Resume</a></li>
+                </div>
             </div>
+        </header>
 
-            <div class="resume">
-                <button ><a href="Resume.pdf" download> Download Resume</a></button>
+        <section>
+            <div class="contact-header">
+                <h1>Contact Me</h1>
             </div>
-        </div>
-
-        <div class="contact-header">
-            <h1>Contact Me</h1>
-        </div>
+        </section>
 
         <footer>
             <div class="row">
@@ -82,17 +92,17 @@
         </footer>
 
         <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            const togglebtn = document.querySelector('.toggle')
+            const togglebtnicon = document.querySelector('.toggle i')
+            const dropdownmenu = document.querySelector('.dropdown_menu')
 
-            /* Set the width of the sidebar to 250px (show it) */
-            function openNav(){
-            document.getElementById("mySidepanel").style.width = "250px";
+            togglebtn.onclick = function ()
+            {
+                dropdownmenu.classList.toggle('open')
+                const isOpen = dropdownmenu.classList.contains('open')
             }
-  
-            /* Set the width of the sidebar to 0 (hide it) */
-            function closeNav() {
-            document.getElementById("mySidepanel").style.width = "0";
-            } 
-            
+
         </script>
     </body>
 </html>
