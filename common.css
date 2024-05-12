@@ -11,6 +11,30 @@ body{
 
 .header-section{
     width:100%;
+    display:flex;
+    justify-content:space-between;
+    background:linear-gradient(to right,rgb(150, 98, 98),rgb(118, 169, 118),yellow);
+}
+
+.logo h1{
+    letter-spacing:1px;
+}
+
+.resume{
+    display:flex;
+    align-items:center;
+}
+
+.resume button{
+    border:none;
+    background:none;
+    outline:0;
+}
+
+.resume>button a{
+    text-decoration:none;
+    font-size:20px;
+    color:#0000ff;
 }
 
 /* The sidepanel menu */
@@ -26,8 +50,8 @@ body{
     border-top-right-radius:50px;
     border-bottom-right-radius:50px;
     overflow-x:hidden; /* Disable horizontal scroll */
-    padding-top:5%; /* Place content 60px from the top */
-    transition:0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    padding-top:3%;
+    transition:0.5s;
   }
   
   /* The sidepanel links */
@@ -37,19 +61,19 @@ body{
     align-items:center;
     justify-content:center;
     text-decoration:none;
-    padding:10%;
+    padding:8%;
     font-size:25px;
     color:#818181;
     transition:0.3s;
   }
   
-  .sidepanel a:hover {
+  .sidepanel a:hover{
     color: #f1f1f1;
   }
   
   /* Position and style the close button (top right corner) */
 
-  .sidepanel .closebt {
+  .sidepanel .closebt{
     position:absolute;
     top:0;
     right:25px;
@@ -72,7 +96,7 @@ body{
     background-color:#444;
   }
 
-.sticky .navbar{
+.sticky .header-section{
     position:fixed;
     top:0;
     left:0;
@@ -103,6 +127,10 @@ body{
 
 @media(max-width:494px){
     .navbar a{
+        display:none;
+    }
+
+    .logo h1{
         display:none;
     }
 }
