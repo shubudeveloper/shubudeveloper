@@ -230,6 +230,8 @@ body::-webkit-scrollbar-thumb{
     align-items:center;
     justify-content:center;
     background:#e0ffff;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
 }
 
 marquee{
