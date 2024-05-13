@@ -589,8 +589,8 @@ ul li a{
     }
 
     .gallery-section .container{
-        margin:20px 0 0 70px;
-        width:80%;
+        margin:65px 0 20px 55px;
+        width:95%;
     }
 
     .heading-1 h1{
@@ -637,5 +637,4 @@ ul li a{
     .heading,.heading-1{
         margin:30px 0 0 0;
     }
-
 }
