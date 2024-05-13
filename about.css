@@ -10,16 +10,6 @@ html{
     width:100%;
 }
 
-/*Preloader*/
-#loader{
-    background: #ffffff url(loader1.gif) no-repeat center center;
-    background-size:10%;
-    height:120vh;
-    width:100%;
-    z-index:100;
-    position:fixed;
-}
-
 li{
     list-style:none;
 }
@@ -532,27 +522,5 @@ ul li a{
 
     .navbar .logo a{
         display:none;
-    }
-
-    .introduction .para-2{
-        font-size:20px;
-    }
-
-    .introduction .btn{
-        margin:30px 0 0 0;
-    }
-
-    .image-section img{
-        margin:-20px 0 0 0;
-    }
-
-    .about-col p{
-        font-size:20px;
-        margin:10px 0 0 0;
-    }
-
-    .tab-titles .tab-links{
-        font-size:15px;
-        margin:0 0 0 10px;
     }
 }

@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="project.css" text="html/css">
         <link rel="stylesheet" href="common.css" text="html/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>My Projects</title>
+        <title>Portfolio | My Projects</title>
     </head>
+
     <body>
         <header>
             <div class="navbar">
@@ -37,11 +38,26 @@
                 </div>
             </div>
         </header>
-
+        
+        <section>
+            <div class="project-header">
+                <h1>My Projects</h1>
+            </div>
+        </section>
 
         <script>
-           
 
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            const togglebtn = document.querySelector('.toggle')
+            const togglebtnicon = document.querySelector('.toggle i')
+            const dropdownmenu = document.querySelector('.dropdown_menu')
+
+            togglebtn.onclick = function ()
+            {
+                dropdownmenu.classList.toggle('open')
+                const isOpen = dropdownmenu.classList.contains('open')
+            }
+            
         </script>
     </body>
 </html>
