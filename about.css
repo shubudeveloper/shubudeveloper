@@ -523,4 +523,8 @@ ul li a{
     .navbar .logo a{
         display:none;
     }
+
+    .main .image-section img{
+        margin:-40px 0 60px 20px;
+    }
 }

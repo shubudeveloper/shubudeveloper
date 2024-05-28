@@ -10,16 +10,6 @@ html{
     width:100%;
 }
 
-/*Preloader*/
-#loader{
-    background: #ffffff url(loader1.gif) no-repeat center center;
-    background-size:10%;
-    height:120vh;
-    width:100%;
-    z-index:100;
-    position:fixed;
-}
-
 li{
     list-style:none;
 }
