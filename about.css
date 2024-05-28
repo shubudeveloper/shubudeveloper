@@ -527,4 +527,8 @@ ul li a{
     .main .image-section img{
         margin:-40px 0 60px 20px;
     }
+
+    .about-col .para-3{
+        margin:0 0 0 -18px;
+    }
 }
